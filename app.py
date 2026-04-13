@@ -163,7 +163,7 @@ st.set_page_config(
 )
 
 st.title("Quiz Generator Agent")
-st.caption("Eğitim dokümanınızı yükleyin, Yapay Zeka ile bağlama duyarlı quiz üretin.")
+st.caption("Dokümanınızı yükleyin, Yapay Zeka ile bağlama duyarlı quiz üretin.")
 
 
 for key, default in {

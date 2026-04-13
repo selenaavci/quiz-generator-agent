@@ -163,7 +163,7 @@ st.set_page_config(
 )
 
 st.title("Quiz Generator Agent")
-st.caption("Eğitim dokümanınızı yükleyin, yerel LLM üzerinden bağlama duyarlı quiz üretin.")
+st.caption("Eğitim dokümanınızı yükleyin, Yapay Zeka ile bağlama duyarlı quiz üretin.")
 
 
 for key, default in {
@@ -177,7 +177,7 @@ for key, default in {
 
 
 with st.sidebar:
-    st.header("Doküman")
+    st.header("Doküman Yükleme")
     uploaded = st.file_uploader(
         "PDF, PPTX, TXT veya DOCX dosyası yükleyin",
         type=["pdf", "pptx", "txt", "docx"],
@@ -201,7 +201,7 @@ with st.sidebar:
     st.divider()
     st.header("Çıktı Formatı")
     enokta_mode = st.checkbox(
-        "Bu quiz enoktaya yüklenecek",
+        "Bu quiz enokta'ya yüklenecek",
         value=False,
         help="İşaretlenirse Excel çıktısı Departman / Eğitim / Konu / Amaç / Hazırlayan kolonlarını içerir.",
     )
